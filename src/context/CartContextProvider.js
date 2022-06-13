@@ -1,4 +1,4 @@
-import React,{useReducer} from 'react';
+import React,{createContext, useReducer} from 'react';
 
 const initialstate={
     selectedItems:[],
@@ -26,13 +26,13 @@ const cartReducer =(state,action)=>{
                     selectedItems:[...newSelectedItems]
             }
          case "INCREASE":
-                const indexI=state.selectedItems.findIndex(item=>items.id===action.payload.id);
+                const indexI=state.selectedItems.findIndex(item=>item.id===action.payload.id);
                 state.selectedItems[indexI].quantity++;
                 return{
                     ...state,
                 }
          case "DECREASE":
-             const indexD=state.selectedItems.findIndex(item=>items.id===action.payload.id);
+             const indexD=state.selectedItems.findIndex(item=>item.id===action.payload.id);
              state.selectedItems[indexD].quantity--;
              return{
                  ...state,
@@ -44,16 +44,28 @@ const cartReducer =(state,action)=>{
                 total:0,
                 chechout:true
             }
+         case "CLEAR":
+            return{
+                selectedItems:[],
+                itemsCounter:0,
+                total:0,
+                chechout:false
+            }
+         default:
+         return state;
 
 
     }
 }
+export const CarttContext=createContext()
 
-const CartContextProvider = () => {
+const CartContextProvider = ({children}) => {
     const [state,disPatch]=useReducer(cartReducer,initialstate)
     return (
         <div>
-            
+            <CarttContext.Provider value={{state,disPatch}}>
+                    {children}
+            </CarttContext.Provider>
         </div>
     );
 };
