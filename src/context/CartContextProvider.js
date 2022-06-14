@@ -62,10 +62,10 @@ const cartReducer =(state,action)=>{
 export const CarttContext=createContext()
 
 const CartContextProvider = ({children}) => {
-    const [state,disPatch]=useReducer(cartReducer,initialstate)
+    const [state,dispatch]=useReducer(cartReducer,initialstate)
     return (
         <div>
-            <CarttContext.Provider value={{state,disPatch}}>
+            <CarttContext.Provider value={{state,dispatch}}>
                     {children}
             </CarttContext.Provider>
         </div>
