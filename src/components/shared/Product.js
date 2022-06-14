@@ -7,6 +7,9 @@ import { isInCart, shorten,quantityCount } from '../../helper/function';
 //context
 import {CarttContext} from "../../context/CartContextProvider"
 
+//icons
+import trashIcon from "../../assets/icons/trash.svg";
+
 const Product = ({productData}) => {
     
     const {state,dispatch}=useContext(CarttContext);
@@ -20,7 +23,7 @@ const Product = ({productData}) => {
                 <Link to={`/products/${productData.id}`}>Details</Link>
                 <div>
                     {quantityCount(state,productData.id) > 1 && <button onClick={() => dispatch({type:"DECREASE", payload: productData})}>-</button>}
-                    {quantityCount(state,productData.id) ===1 && <button onClick={() => dispatch({type:"REMOVE_ITEM", payload: productData})}>Remove</button>}
+                    {quantityCount(state,productData.id) ===1 && <button onClick={() => dispatch({type:"REMOVE_ITEM", payload: productData})}>{<img src={trashIcon} alt="trash" style={{width: "10px"}}></img>}</button>}
                 
                     {
                          isInCart(state, productData.id) ?
