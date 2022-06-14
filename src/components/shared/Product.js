@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 
 //functon
-import { isInCart, shorten } from '../../helper/function';
+import { isInCart, shorten,quantityCount } from '../../helper/function';
 
 //context
 import {CarttContext} from "../../context/CartContextProvider"
@@ -19,6 +19,8 @@ const Product = ({productData}) => {
             <div>
                 <Link to={`/products/${productData.id}`}>Details</Link>
                 <div>
+                    {quantityCount(state,productData.id) > 1 && <button onClick={() => dispatch({type:"DECREASE", payload: productData})}>-</button>}
+                    {quantityCount(state,productData.id) ===1 && <button onClick={() => dispatch({type:"REMOVE_ITEM", payload: productData})}>Remove</button>}
                 
                     {
                          isInCart(state, productData.id) ?
