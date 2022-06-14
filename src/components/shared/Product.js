@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 
 //functon
 import { shorten } from '../../helper/function';
 
+//context
+import {CarttContext} from "../../context/CartContextProvider"
+
 const Product = ({productData}) => {
+    
+    const {state,dispatch}=useContext(CarttContext);
+    
     return (
         <div>
             <img src={productData.image} alt="product" style={{width:"150px"}}/>
