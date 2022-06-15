@@ -12,7 +12,7 @@ const Navbar = () => {
         <div>
             <Link to="/product">Product</Link>
             <div>
-                <Link to="/Cart"><img src={shopIcon} alt="shop"/></Link>
+                <Link to="/cart"><img src={shopIcon} alt="shop"/></Link>
                 <span>{state.itemsCounter}</span>
             </div>
             
