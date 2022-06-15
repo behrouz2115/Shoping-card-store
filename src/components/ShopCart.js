@@ -10,7 +10,6 @@ const ShopCart = () => {
     const {state,dispatch}=useContext(CarttContext);
     return (
         <div>
-            <h1>Shop cart</h1>
             <div>
                 {state.selectedItems.map(item=><Cart key={item.id} data={item}/>)}
             </div>
