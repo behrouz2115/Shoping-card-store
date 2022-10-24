@@ -6,3 +6,20 @@
     margin-top: 150px;
     padding: 0 150px;
   }
+  @media(max-width:1200px){
+    .container{
+        padding: 15px 80px;
+        margin-top: 110px;
+    }
+}
+@media(max-width:768px){
+  .container{
+      padding: 15px 40px;
+  }
+}
+@media(max-width:555px){
+  .container{
+      padding: 15px 10px;
+      justify-content: center;
+  }
+}
