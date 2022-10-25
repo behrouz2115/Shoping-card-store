@@ -88,4 +88,30 @@
 .completeP:hover{
     background-color: #08499d;
 }
-
+@media(max-width:1050px){
+    .container{
+        
+        flex-direction: column-reverse;
+        margin: 120px 80px 50px;
+        align-items: center;
+    }
+    .cartContainer{width: 100%;}
+    .payments{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:768px){
+    .container{
+        
+        margin: 120px 40px 50px;
+    }
+  
+}
+@media(max-width:555px){
+    .container{
+        
+        margin: 120px 20px 50px;
+    }
+  
+}
