@@ -80,3 +80,30 @@
     color: #1a77e8;
 
 }
+@media(max-width:1000px){
+    .container{
+     width: 45%;
+    }
+}
+@media(max-width:768px){
+    .container{
+     width: 45%;
+    }
+    .cartImage{
+        width: 200px;
+    }
+}
+@media(max-width:555px){
+    .container{
+     width: 70%;
+    }
+    .cartImage{
+        width: 230px;
+    }
+}
+@media(max-width:400px){
+    .container{
+     width: 90%;
+    }
+    
+}
