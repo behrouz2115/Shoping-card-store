@@ -47,3 +47,19 @@
     font-weight: bold;
     color: #fff;
   }  
+  @media(max-width:1200px){
+    .container{
+      padding: 15px 80px;
+         }
+   
+}
+@media(max-width:768px){
+  .container{
+    padding: 15px 40px;
+       } 
+}
+@media(max-width:555px){
+  .container{
+    padding: 15px 20px;
+       } 
+}
