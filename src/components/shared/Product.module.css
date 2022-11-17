@@ -45,7 +45,8 @@
 }
 .buttonContainer button{
     font-size: 0.9rem;
-    background-color: rgb(44, 28, 196);
+    background-color: rgb(79, 152, 108);
+    text-align: center;
     border: none;
     color: #fff;
     height: 30px;
@@ -63,10 +64,12 @@
     background-color: rgb(57, 112, 131);
 }
 .smallButton{
+    margin: auto;
     width: 30px !important;
     font-size: 1.6rem !important;
     font-weight: bold;
-    line-height: 30px;
+    text-align: center;
+        /* line-height: 30px; */
 }
 .smallButton img{
     width: 20px;
