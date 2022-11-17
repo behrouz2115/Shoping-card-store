@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Shoping-card-store.git/static/css/main.b789201d.css",
-    "main.js": "/Shoping-card-store.git/static/js/main.b15665c9.js",
+    "main.js": "/Shoping-card-store.git/static/js/main.8929fd8b.js",
     "index.html": "/Shoping-card-store.git/index.html",
     "static/media/shop.svg": "/Shoping-card-store.git/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
     "static/media/trash.svg": "/Shoping-card-store.git/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
     "main.b789201d.css.map": "/Shoping-card-store.git/static/css/main.b789201d.css.map",
-    "main.b15665c9.js.map": "/Shoping-card-store.git/static/js/main.b15665c9.js.map"
+    "main.8929fd8b.js.map": "/Shoping-card-store.git/static/js/main.8929fd8b.js.map"
   },
   "entrypoints": [
     "static/css/main.b789201d.css",
-    "static/js/main.b15665c9.js"
+    "static/js/main.8929fd8b.js"
   ]
 }
