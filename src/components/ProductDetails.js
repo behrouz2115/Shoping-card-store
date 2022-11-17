@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 //context
 import { ProductsContext } from '../context/ProductContextProvider';
@@ -9,10 +9,14 @@ import styles from "./ProductDetails.module.css";
 
 
 const ProductDetails = (props) => {
-    const id =props.match.params.id;
-    const data=useContext(ProductsContext);
-    const product =data[id-1];
-    const {image, title, description, price, category}=product;
+    // const id =props.match.params.id;
+    // const data=useContext(ProductsContext);
+    // const product =data[id-1];
+    // const {image, title, description, price, category}=product;
+    let params =useParams();
+    const data = useContext(ProductsContext);
+    const product= data[params.id-1];
+     const {image, title, description, price, category}=product;
 
     return (
         <div className={styles.container}>

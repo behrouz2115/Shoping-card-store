@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import ProductDetails from './components/ProductDetails';
 //components
 import Store from './components/Store';
@@ -17,12 +17,15 @@ const App = () => {
       <ProductContextProvider>
         <CartContextProvider>
           <Navbar/>
-          <Switch>
-            <Route path={"/products/:id"} component={ProductDetails}/>
-            <Route path={"/products"} component={Store}/>
-            <Route path={"/cart"} component={ShopCart}/>
-            <Redirect to="/products"/>
-          </Switch>
+         <Routes>
+
+            <Route path="/products/:id" element={<ProductDetails/>}/>
+            <Route path="/products" element={<Store/>}/>
+            <Route path="/*" element={<Store/>}/>
+            <Route path="/cart" element={<ShopCart/>}/>
+          
+         </Routes>
+          
         </CartContextProvider>
       </ProductContextProvider>
     </div>
