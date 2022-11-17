@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Shoping-card-store/static/css/main.5a3db57b.css",
-    "main.js": "/Shoping-card-store/static/js/main.61158039.js",
-    "index.html": "/Shoping-card-store/index.html",
-    "static/media/shop.svg": "/Shoping-card-store/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
-    "static/media/trash.svg": "/Shoping-card-store/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
-    "main.5a3db57b.css.map": "/Shoping-card-store/static/css/main.5a3db57b.css.map",
-    "main.61158039.js.map": "/Shoping-card-store/static/js/main.61158039.js.map"
+    "main.css": "/behrouz2115/Shoping-card-store.git/static/css/main.b789201d.css",
+    "main.js": "/behrouz2115/Shoping-card-store.git/static/js/main.639c0c90.js",
+    "index.html": "/behrouz2115/Shoping-card-store.git/index.html",
+    "static/media/shop.svg": "/behrouz2115/Shoping-card-store.git/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
+    "static/media/trash.svg": "/behrouz2115/Shoping-card-store.git/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
+    "main.b789201d.css.map": "/behrouz2115/Shoping-card-store.git/static/css/main.b789201d.css.map",
+    "main.639c0c90.js.map": "/behrouz2115/Shoping-card-store.git/static/js/main.639c0c90.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a3db57b.css",
-    "static/js/main.61158039.js"
+    "static/css/main.b789201d.css",
+    "static/js/main.639c0c90.js"
   ]
 }
