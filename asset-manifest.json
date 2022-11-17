@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/behrouz2115/Shoping-card-store/static/css/main.5a3db57b.css",
+    "main.js": "/behrouz2115/Shoping-card-store/static/js/main.9e3fbbf6.js",
+    "index.html": "/behrouz2115/Shoping-card-store/index.html",
+    "static/media/shop.svg": "/behrouz2115/Shoping-card-store/static/media/shop.2123e512621599840c57cfb215576ffc.svg",
+    "static/media/trash.svg": "/behrouz2115/Shoping-card-store/static/media/trash.3b106fc6789b1ff09aba8a30ae7dc1ed.svg",
+    "main.5a3db57b.css.map": "/behrouz2115/Shoping-card-store/static/css/main.5a3db57b.css.map",
+    "main.9e3fbbf6.js.map": "/behrouz2115/Shoping-card-store/static/js/main.9e3fbbf6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a3db57b.css",
+    "static/js/main.9e3fbbf6.js"
+  ]
+}
